@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashtra Shakti Vidyalaya | Student Product Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img
+            class="brand-logo"
+            src="assets/school-logo.png"
+            alt="Rashtra Shakti Vidyalaya logo"
+            loading="eager"
+          />
+          <div class="brand-text">
+            <h1 class="school-name">RASHTRA SHAKTI VIDYALAYA</h1>
+            <p class="school-subtitle">Student Product Showcase</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="search-section" aria-label="Search products">
+        <div class="search-wrap">
+          <label class="sr-only" for="searchInput">Search products</label>
+          <input
+            id="searchInput"
+            class="search-input"
+            type="search"
+            placeholder="Search products by name or keyword..."
+            autocomplete="off"
+          />
+        </div>
+      </section>
+
+      <section class="catalogue" aria-label="Product catalogue">
+        <div class="container">
+          <div class="catalogue-head">
+            <h2 class="section-title">Product Catalogue</h2>
+            <p class="section-hint" id="resultsHint" aria-live="polite"></p>
+          </div>
+
+          <div id="productGrid" class="product-grid" role="list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 RASHTRA SHAKTI VIDYALAYA | Student Project</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
